@@ -6,6 +6,9 @@
   "main": "index.js",
   "license": "MIT",
   "proxy":  "http://gaardbodigital.dk:5000",
+  "engines": {
+    "node": "15.10.0"
+  },
   "dependencies": {
     "axios": "^0.21.1",
     "dotenv": "^4.0.0",
