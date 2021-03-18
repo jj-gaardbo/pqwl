@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 //const CopyWebpackPlugin = require('copy-webpack-plugin');
 const htmlWebpackPlugin = new HtmlWebpackPlugin({
     title: 'Template',
-    template: __dirname + '/app/index.html',
+    template: __dirname + '/client/index.html',
     filename: 'index.html',
     hash: true,
     inject: 'body'
@@ -13,8 +13,8 @@ const htmlWebpackPlugin = new HtmlWebpackPlugin({
 const HotReloader = new webpack.HotModuleReplacementPlugin();
 
 module.exports = {
-    context: __dirname + '/app',
-    entry: __dirname + '/app/App.js',
+    context: __dirname + '/client',
+    entry: __dirname + '/client/App.js',
     output: {
         path: __dirname + '/dist',
         filename: "bundle.js"

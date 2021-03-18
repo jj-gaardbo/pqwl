@@ -53,7 +53,7 @@
   },
   "scripts": {
     "start": "webpack-dev-server",
-    "start-server": "node backend/server.js",
+    "start-server": "node server/index.js",
     "build": "webpack",
     "build-prod": "webpack --config webpack.config.prod.js",
     "prod-profile": "webpack --config webpack.config.prod.js --profile --json > stats.json"
