@@ -4,7 +4,7 @@ import SCSS from './styles/app.scss';
 import Main from "./components/Main.jsx";
 
 const appData = {
-  title: 'NDC MiniProject'
+  title: 'PQWL Project'
 };
 
 ReactDOM.render(
