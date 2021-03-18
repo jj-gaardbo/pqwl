@@ -1,11 +1,10 @@
 {
-  "homepage": "http://gaardbodigital.dk",
   "name": "pqwl",
   "version": "1.0.0",
   "description": "This is a react based pqwl application",
   "main": "index.js",
   "license": "MIT",
-  "proxy":  "http://gaardbodigital.dk:5000",
+  "proxy":  "http://localhost:3001",
   "engines": {
     "node": "15.10.0"
   },
