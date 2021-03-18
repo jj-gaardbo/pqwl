@@ -1,0 +1,51 @@
+syntax: glob
+
+# Back-up
+*~
+
+# Executables
+**/build/**
+*.o
+.depend
+build/
+
+# IDE (eclipse)
+.project
+.cproject
+
+# IDE (QtCreator)
+*.config
+*.creator
+*.creator.user
+*.files
+*.includes
+
+# IDE JetBrains
+.idea/
+
+# Python
+*.pyc
+
+# Java
+*.class
+
+#node
+node_modules/
+
+dist/
+dist.zip
+
+#OS
+.directory
+
+#yarn
+yarn.lock
+yarn-error.log
+
+syntax: regexp
+
+app/components/assets
+
+app/components/assets/audio
+app/components/assets/images
+app/components/assets/video

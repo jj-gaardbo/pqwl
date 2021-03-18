@@ -1,0 +1,69 @@
+{
+  "homepage": "http://gaardbodigital.dk",
+  "name": "pqwl",
+  "version": "1.0.0",
+  "description": "This is a react based pqwl application",
+  "main": "index.js",
+  "license": "MIT",
+  "proxy":  "http://gaardbodigital.dk:5000",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^4.0.0",
+    "jquery": "^3.6.0",
+    "modernizr-webpack-plugin": "^1.0.7",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "^1.0.13",
+    "react-sortablejs": "^6.0.0",
+    "reactstrap": "^8.4.1",
+    "sortablejs": "^1.13.0",
+    "webpack": "^3.5.6",
+    "webpack-dev-server": "^2.8.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "bootstrap": "4.0.0-alpha.6",
+    "clean-webpack-plugin": "^0.1.17",
+    "compression-webpack-plugin": "^1.0.1",
+    "copy-webpack-plugin": "^4.2.0",
+    "css-loader": "^0.28.7",
+    "domready": "^1.0.8",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^5.1.0",
+    "html-webpack-plugin": "^2.30.1",
+    "install": "^0.10.1",
+    "node-sass": "^4.5.3",
+    "normalize.css": "^7.0.0",
+    "react-addons-css-transition-group": "^15.6.2",
+    "react-addons-transition-group": "^15.6.2",
+    "react-icons": "^2.2.5",
+    "react-image": "^1.0.1",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
+    "webpack-manifest-plugin": "^1.3.2",
+    "webpack-merge": "^4.1.0",
+    "yarn-install": "^0.5.1"
+  },
+  "scripts": {
+    "start": "webpack-dev-server",
+    "start-server": "node backend/server.js",
+    "build": "webpack",
+    "build-prod": "webpack --config webpack.config.prod.js",
+    "prod-profile": "webpack --config webpack.config.prod.js --profile --json > stats.json"
+  },
+  "babel": {
+    "env": {
+      "production": {
+        "plugins": [
+          "transform-react-constant-elements",
+          "transform-react-inline-elements"
+        ]
+      }
+    }
+  }
+}

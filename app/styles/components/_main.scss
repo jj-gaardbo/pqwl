@@ -1,0 +1,100 @@
+.main-wrapper{
+  box-sizing: border-box;
+  padding: 40px;
+
+  header{
+    max-width: 100vw;
+    top: 0;
+    left: 0;
+    position: fixed;
+    margin-bottom: 10px;
+    background-color: #222c5c;
+    width: 100%;
+    height: auto;
+    z-index: 99;
+
+    button{
+      float: right;
+      margin: 10px;
+    }
+
+    .language{
+      button{
+        float: left;
+      }
+    }
+  }
+
+  .form-wrapper{
+    padding-top: 50px;
+  }
+
+  .form-check{
+    padding: 5px 10px;
+    box-sizing: border-box;
+  }
+
+  input[type=checkbox], input[type=radio]{
+    display: block;
+    padding: 5px;
+    float: left;
+    margin-top: 5px;
+  }
+
+  label{
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.2em;
+    margin: 5px;
+  }
+
+
+
+  div.list-item{
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 20px;
+
+    span{
+      display: block;
+      float: left;
+      width: 50px;
+      color: black;
+      box-sizing: border-box;
+      padding: 0 10px;
+    }
+  }
+
+  .ranking{
+    margin-top: 40px;
+  }
+}
+
+
+.main{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: #000000;
+  display: grid;
+  text-align: center;
+  align-items: center;
+  .frame{
+    display: grid;
+    text-align: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    content: '';
+    border: 1px solid #fff;
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+  }
+}
+
+p{
+  width: 100%;
+}
