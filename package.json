@@ -4,7 +4,7 @@
   "description": "This is a react based pqwl application",
   "main": "index.js",
   "license": "MIT",
-  "proxy":  "http://localhost:3001",
+  "proxy": "http://localhost:3001",
   "engines": {
     "node": "15.10.0"
   },
@@ -36,7 +36,7 @@
     "domready": "^1.0.8",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^5.1.0",
-    "html-webpack-plugin": "^2.30.1",
+    "html-webpack-plugin": "^5.3.1",
     "install": "^0.10.1",
     "node-sass": "^4.5.3",
     "normalize.css": "^7.0.0",

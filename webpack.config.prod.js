@@ -6,15 +6,15 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const htmlWebpackPlugin = new HtmlWebpackPlugin({
     title: 'Template - PROD',
-    template: __dirname + '/app/index.html',
+    template: __dirname + '/client/index.html',
     filename: 'index.html',
     hash: true,
     inject: 'body'
 });
 
 module.exports = {
-    context: __dirname + '/app',
-    entry: __dirname + '/app/App.js',
+    context: __dirname + '/client',
+    entry: __dirname + '/client/App.js',
     output: {
         path: __dirname + '/dist',
         filename: "bundle.js"
