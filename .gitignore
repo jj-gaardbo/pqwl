@@ -44,8 +44,3 @@ yarn-error.log
 
 syntax: regexp
 
-app/components/assets
-
-app/components/assets/audio
-app/components/assets/images
-app/components/assets/video
