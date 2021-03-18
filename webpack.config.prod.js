@@ -1,16 +1,18 @@
 const webpack = require('webpack');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+/*
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+*/
 const CompressionWebpackPlugin = require('compression-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-const htmlWebpackPlugin = new HtmlWebpackPlugin({
+/*const htmlWebpackPlugin = new HtmlWebpackPlugin({
     title: 'Template - PROD',
     template: __dirname + '/client/index.html',
     filename: 'index.html',
     hash: true,
     inject: 'body'
-});
+});*/
 
 module.exports = {
     context: __dirname + '/client',
@@ -37,7 +39,7 @@ module.exports = {
 
     plugins: [
         new CleanWebpackPlugin(['dist']),
-        htmlWebpackPlugin,
+        /*htmlWebpackPlugin,*/
         new webpack.optimize.UglifyJsPlugin({
             sourceMap: true,
             compress: {

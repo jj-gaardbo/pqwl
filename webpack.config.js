@@ -1,14 +1,14 @@
 const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+//const HtmlWebpackPlugin = require('html-webpack-plugin');
 /*const ModernizrWebpackPlugin = require('modernizr-webpack-plugin');*/
 //const CopyWebpackPlugin = require('copy-webpack-plugin');
-const htmlWebpackPlugin = new HtmlWebpackPlugin({
+/*const htmlWebpackPlugin = new HtmlWebpackPlugin({
     title: 'Template',
     template: __dirname + '/client/index.html',
     filename: 'index.html',
     hash: true,
     inject: 'body'
-});
+});*/
 
 const HotReloader = new webpack.HotModuleReplacementPlugin();
 
@@ -71,7 +71,7 @@ module.exports = {
         ]
     },
     plugins: [
-        htmlWebpackPlugin,
+        /*htmlWebpackPlugin,*/
         HotReloader,
         /*new CopyWebpackPlugin([
             { from: 'manifest.json' },
